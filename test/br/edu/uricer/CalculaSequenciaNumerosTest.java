@@ -13,6 +13,13 @@ import static org.junit.Assert.*;
  */
 public class CalculaSequenciaNumerosTest {
     
+    int[] valores = {6, 9, 15, -2, 92, 11};
     
+    @Test
+    public void TestaNumeroMinimo(){
+        CalculaSequenciaNumeros calcular = new CalculaSequenciaNumeros(valores);
+        
+        assertEquals(-2, calcular.valorMinimo());
+    }
     
 }
